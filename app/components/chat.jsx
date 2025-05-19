@@ -81,7 +81,7 @@ export default function ChatInterface() {
     
     try {
       // Call your API
-      const res = await fetch(`http://localhost:3000/chat?message=${encodeURIComponent(message)}`);
+      const res = await fetch(`https://pdf-rag-backend.vercel.app/chat?message=${encodeURIComponent(message)}`);
       const data = await res.json();
       
       // Add AI response to state

@@ -18,7 +18,7 @@ const FileUploadComponent= ({ setShowAlert, setTitle, setType }) => {
           formData.append('pdf', file);
           console.log('Uploading file:');
 
-          const res = await fetch('http://localhost:3000/upload/pdf', {
+          const res = await fetch('https://pdf-rag-backend.vercel.app/upload/pdf', {
             method: 'POST',
             body: formData,
           });
