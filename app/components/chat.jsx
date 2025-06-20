@@ -47,7 +47,7 @@
 
 
 function convertMarkdownToH1(input) {
-  return input.replace(/\*\*(.*?)\*\*/g, '$1');
+  return input?.replace(/\*\*(.*?)\*\*/g, '$1') ?? input;
 }
 
 
